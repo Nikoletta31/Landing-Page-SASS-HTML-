@@ -1,0 +1,141 @@
+@media only screen and (min-width: 1051px) {
+
+@mixin padding-text {
+    font-size:30px;
+    padding:40px 30px 30px 30px;
+    text-align:center;
+    }
+    
+    @mixin padding-par {
+    padding:10px 30px 20px 30px;
+    }
+    
+    
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+    
+    body {
+        background-image: url("./background-869580_1280.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+
+  
+    
+    nav {
+        ul {
+            display:flex;
+            justify-content: center;
+            li{
+                padding:20px;
+                list-style: none;
+                font-size:13px;
+                a{
+                    color:white;
+                    text-decoration:none;
+                    text-transform: uppercase;
+                    
+                    
+                }
+    
+            }
+        }
+    }
+    
+    .container {
+    
+        margin:100px 300px 200px 300px;
+        
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        border-radius: 25px;;
+       .up{
+        grid-column-start:1; 
+        grid-column-end:3;
+        background-color: white;
+       border-top-left-radius: 25px;
+       border-top-right-radius: 25px;
+        text-align:center;
+        
+        button{
+            margin:0 auto;
+            background-color: rgb(187, 53, 180);
+            color:white;
+            border:none;
+            border-radius:10px; 
+            padding:15px;
+            width:20%;
+            font-size:20px; 
+            margin-bottom:20px;
+            &:hover{
+                background-color:rgb(207, 79, 201);
+                cursor: pointer;
+            }
+        }
+        h1{
+            color:#150485;
+           @include padding-text;
+          
+        }
+        h2{
+        color: #03c4a1;
+        text-align:center;
+        font-size:20px;
+        padding:0px 20px 10px 20px;
+        }
+        p{
+            color:black;
+            @include padding-par;
+            text-align:left;
+           
+         
+        }
+       }
+       .left{
+           background-color: #03c4a1;
+           border-bottom-left-radius: 25px;
+           
+          
+           h1{
+               color:white;
+               @include padding-text;
+               
+           }
+           p{
+               color:white;
+               @include padding-par;
+             
+           }
+        
+       }
+       .right{
+           background-color:#47e0c4;
+           border-bottom-right-radius: 25px;
+           
+          
+           h1{
+               color:white;
+               @include padding-text;
+              
+           }
+           p{
+               color:white;
+               @include padding-par;
+            
+           }
+       }
+      
+      }
+    
+}
+    
+    
